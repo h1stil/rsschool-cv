@@ -1,215 +1,249 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Travel</title>
-    <link rel="stylesheet" href="./travel/css/style.css" />
+    <link rel="stylesheet" href="/travel/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,400;0,700;1,700&family=Magra&family=Red+Hat+Text:wght@500&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header class="header">
       <div class="wrapper">
-        <div class="logo">
-          <a href="#"
-            ><img src="/travel/img/Vectorlogo.svg" alt="Logo" />
-            <span class="logo_name">Travel portal</span>
-          </a>
-        </div>
-        <nav class="navbar">
-          <ul class="nav_menu">
-            <li class="nav_item">
-              <a href="" class="nav_link">How It Works</a>
-            </li>
-            <li class="nav_item">
-              <a href="" class="nav_link">Plan Your Trip</a>
-            </li>
-            <li class="nav_item">
-              <a href="" class="nav_link">Destinations</a>
-            </li>
-            <li class="nav_item">
-              <a href="" class="nav_link">Travel Stories</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="header__button">
-          <button class="button butten_login">Login</button>
+        <div class="header__content">
+          <div class="logo">
+            <a class="logo_link" href="#"
+              ><img src="/travel/img/Vectorlogo.svg" alt="Logo" />
+              <span class="logo_name">Travel portal</span>
+            </a>
+          </div>
+          <nav class="navbar">
+            <ul class="nav_menu">
+              <li class="nav_item">
+                <a href="" class="nav_link">How It Works</a>
+              </li>
+              <li class="nav_item">
+                <a href="" class="nav_link">Plan Your Trip</a>
+              </li>
+              <li class="nav_item">
+                <a href="" class="nav_link">Destinations</a>
+              </li>
+              <li class="nav_item">
+                <a href="" class="nav_link">Travel Stories</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__button">
+            <button class="button butten_login">Login</button>
+          </div>
         </div>
       </div>
     </header>
+
     <main class="main">
-      <section class="preview">
-        <div class="wrapper">
+      <div class="wrapper">
+        <section class="preview">
           <div class="preview__content">
             <h1>Explore the beauty of the World</h1>
-            <p>
+            <p class="preview_text">
               Receive personalized recommendations for countries, hotels,
               activities and more
             </p>
             <div class="preview__search">
-              <input class="preview_input" type="text" name="" id="" />
+              <!-- <input
+                class="preview_input"
+                type="text"
+                name=""
+                id=""
+                placeholder="What would you like to do?"
+              /> -->
+              <span class="search_text">What would you like to do?</span>
               <button class="button butten_search">Start Planning</button>
             </div>
           </div>
-        </div>
-      </section>
-      <section class="steps">
-        <div class="wrapper">
+        </section>
+        <section class="steps">
           <div class="steps__content">
             <h2 class="title">3 STEPS TO THE PERFECT TRIP</h2>
             <div class="steps__layount">
               <div class="layount__item">
                 <div class="item__icon">
-                  <img class="icon" src="/travel/img/1_step.svg" alt="" />
+                  <img class="icon_1" src="/travel/img/1_step.svg" alt="" />
                 </div>
-                <p>Tell us what you want to do</p>
+                <p class="layount_text">Tell us what you want to do</p>
               </div>
               <div class="layount__item">
                 <div class="item__icon">
-                  <img class="icon" src="/travel/img/2_step.svg" alt="" />
+                  <img class="icon_2" src="/travel/img/2_step.svg" alt="" />
                 </div>
-                <p>Share us preferable dates</p>
+                <p class="layount_text">Share us preferable dates</p>
               </div>
               <div class="layount__item">
                 <div class="item__icon">
-                  <img class="icon" src="/travel/img/3_step.svg" alt="" />
+                  <img class="icon_3" src="/travel/img/3_step.svg" alt="" />
                 </div>
-                <p>We will give you recommendations</p>
+                <p class="layount_text">We will give you recommendations</p>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-      <section class="destinations">
-        <div class="wrapper">
+        </section>
+        <section class="destinations">
           <div class="destinations__content">
-            <h2 class="title">POPULAR DESTINATIONS</h2>
+            <h2 class="title title_destinations">POPULAR DESTINATIONS</h2>
             <div class="swiper"></div>
-            <button class="button butten_more">Find More</button>
+            <button class="button butten_more">&rarr; Find More</button>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
+    </main>
+    <div class="wrapper">
       <section class="stories">
-        <div class="wrapper">
-          <h2 class="title">TRAVEL STORIES</h2>
-          <div class="stories__content">
-            <div class="stories_1">
+      <h2 class="title">TRAVEL STORIES</h2>
+      <div class="stories_wrapper">
+        <div class="stories__content">
+          <div class="stories__block">
+            <div class="stories_item">
               <div class="stories_image">
                 <img
                   class="story_image"
-                  src="/travel/img/stories/Rectangle 29.jpg"
-                  alt=""
+                  src="/travel/img/stories/Rectangle29.jpg"
+                  alt="image"
                 />
               </div>
               <div class="stories_text">
                 <h3>10 Photos of Attractive Thailand</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                  irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                  cupidatat non proident, sunt in culpa qui officia deserunt
-                  mollit anim id est laborum.Lorem ipsum dolor sit amet,
-                  consectetur adipiscing elit... Read More
-                </p>
+                <p class="stories_lorem">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                  sed do eiusmod tempor incididunt ut labore et dolore magna
+                  aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                  ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  Duis aute irure dolor in reprehenderit in voluptate velit
+                  esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                  sint occaecat cupidatat non proident, sunt in culpa qui
+                  officia deserunt mollit anim id est laborum.Lorem ipsum
+                  dolor sit amet, consectetur adipiscing elit... 
+                  <p class="stories_link"><a href="">Read More</a></p>
+              </p>
               </div>
             </div>
-            <div class="stories_2">
+            <div class="stories_item">
               <div class="stories_image">
                 <img
                   class="story_image"
-                  src="/travel/img/stories/Rectangle 30.jpg"
-                  alt=""
+                  src="/travel/img/stories/Rectangle30.jpg"
+                  alt="image"
                 />
               </div>
               <div class="stories_text">
                 <h3>Canyonlands National Park, Utah</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                  irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                  cupidatat non proident, sunt in culpa qui officia deserunt
-                  mollit anim id est laborum.Lorem ipsum dolor sit amet,
-                  consectetur adipiscing elit... Read More
+                <p class="stories_lorem">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                  sed do eiusmod tempor incididunt ut labore et dolore magna
+                  aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                  ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  Duis aute irure dolor in reprehenderit in voluptate velit
+                  esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                  sint occaecat cupidatat non proident, sunt in culpa qui
+                  officia deserunt mollit anim id est laborum.Lorem ipsum
+                  dolor sit amet, consectetur adipiscing elit... 
+                  <p class="stories_link"><a href="">Read More</a><p>
                 </p>
               </div>
             </div>
-            <div class="stories_3">
+            <div class="stories_item">
               <div class="stories_image">
                 <img
                   class="story_image"
-                  src="/travel/img/stories/Rectangle 31.jpg"
-                  alt=""
+                  src="/travel/img/stories/Rectangle31.jpg"
+                  alt="image"
                 />
               </div>
               <div class="stories_text">
                 <h3>I left my heart in the Mountains!</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                  irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                  cupidatat non proident, sunt in culpa qui officia deserunt
-                  mollit anim id est laborum.Lorem ipsum dolor sit amet,
-                  consectetur adipiscing elit... Read More
+                <p class="stories_lorem">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                  sed do eiusmod tempor incididunt ut labore et dolore magna
+                  aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                  ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  Duis aute irure dolor in reprehenderit in voluptate velit
+                  esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                  sint occaecat cupidatat non proident, sunt in culpa qui
+                  officia deserunt mollit anim id est laborum.Lorem ipsum
+                  dolor sit amet, consectetur adipiscing elit... 
+                 <p class="stories_link"><a href="">Read More</a></p>
                 </p>
               </div>
             </div>
-            <div class="stories_4">
+            <div class="stories_item">
               <div class="stories_image">
                 <img
                   class="story_image"
-                  src="/travel/img/stories/Rectangle 32.jpg"
-                  alt=""
+                  src="/travel/img/stories/Rectangle32.jpg"
+                  alt="image"
                 />
               </div>
               <div class="stories_text">
                 <h3>The Longest journey in my life!</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                  irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                  cupidatat non proident, sunt in culpa qui officia deserunt
-                  mollit anim id est laborum.Lorem ipsum dolor sit amet,
-                  consectetur adipiscing elit... Read More
+                <p class="stories_lorem">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                  sed do eiusmod tempor incididunt ut labore et dolore magna
+                  aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                  ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  Duis aute irure dolor in reprehenderit in voluptate velit
+                  esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                  sint occaecat cupidatat non proident, sunt in culpa qui
+                  officia deserunt mollit anim id est laborum.Lorem ipsum
+                  dolor sit amet, consectetur adipiscing elit...
+                  <p class="stories_link"><a href="">Read More</a></p>
                 </p>
               </div>
             </div>
-            <button class="button butten_more">See More</button>
           </div>
+          <button class="button butten_more">&rarr; See More</button>
         </div>
-      </section>
-    </main>
-    <footer class="footer">
-      <div class="footer_left"></div>
-      <p>All Rights Reserved © Travel Portal</p>
-      <div class="footer__contact">
-        <a href="https://rs.school/js-stage0/"
-          ><img class="contact_item" src="/travel/img/inst.svg" alt="Instagram"
-        /></a>
-        <a href="https://github.com/h1stil"
-          ><img
-            class="contact_item"
-            src="/travel/img/youtube.svg"
-            alt="Youtube"
-        /></a>
-        <a href=""
-          ><img
-            class="contact_item"
-            src="/travel/img/twitter.svg"
-            alt="Twitter"
-        /></a>
+        <footer class="footer">
+          <div class="footer_left"></div>
+          <p class="footer_text">All Rights Reserved © Travel Portal</p>
+          <div class="footer__contact">
+            <ul class="footer_menu">
+              <li class="footer_item">
+            <a href="https://rs.school/js-stage0/" target="_blank">
+              <img
+                class="contact_item"
+                src="/travel/img/inst.svg"
+                alt="Instagram"
+              />
+            </a>
+              </li>
+              <li class="footer_item">
+            <a href="https://github.com/h1stil" target="_blank">
+              <img
+                class="contact_item"
+                src="/travel/img/youtube.svg"
+                alt="Youtube"
+              />
+            </a>
+              </li>
+              <li class="footer_item">
+            <a href="">
+              <img
+                class="contact_item"
+                src="/travel/img/twitter.svg"
+                alt="Twitter"
+              />
+            </a>
+              </li>
+            </ul>
+          </div>
+        </footer>
       </div>
-    </footer>
+      </section>
+    </div>
   </body>
 </html>
