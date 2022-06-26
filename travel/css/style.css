@@ -202,6 +202,98 @@ a {
   height: 184px;
 } */
 
+/* slider */
+
+.swiper {
+  max-width: 2440px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.swiper__slader {
+  display: flex;
+}
+
+.swiper__navigation {
+  margin: 24px 0 40px 0;
+}
+
+.radio_bar {
+  height: 20px;
+  width: 20px;
+  background-color: rgba(242, 120, 92, 0.5);
+  cursor: pointer;
+  border-radius: 50%;
+  transition: all 0.4s ease;
+  margin-right: 10px;
+}
+
+.radio_bar:hover {
+  background: #f2785c;
+  transform: scale(1.1);
+}
+
+.swiper__navigation {
+  display: flex;
+}
+
+input[name="radio_slide"] {
+  display: none;
+  visibility: hidden;
+}
+
+.japan {
+  background: url(/travel/img/destinations/japan.jpg) no-repeat;
+  height: 800px;
+  width: 800px;
+}
+
+.usa {
+  background: url(/travel/img/destinations/usa.jpg) no-repeat;
+  height: 800px;
+  width: 800px;
+}
+
+.spain {
+  background: url(/travel/img/destinations/north.jpg) no-repeat;
+  height: 800px;
+  width: 800px;
+}
+
+.swiper_text {
+  display: block;
+  position: relative;
+  font-family: "Red Hat Text";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 3.2rem;
+  line-height: 4.2rem;
+  color: #ffffff;
+  top: 718px;
+  left: 15px;
+}
+
+.swiper__slide {
+  margin: 0 30px 0 30px;
+  border-radius: 16px;
+  transition: all 0.6s ease;
+}
+
+#s2:checked ~ .japan {
+  margin-left: 0;
+}
+
+#s1:checked ~ .japan {
+  margin-left: -25%;
+}
+
+#s3:checked ~ .japan {
+  margin-left: -50%;
+}
+
 /* button */
 
 .button {
