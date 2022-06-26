@@ -205,7 +205,7 @@ a {
 /* slider */
 
 .swiper {
-  max-width: 2440px;
+  max-width: 1440px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -247,20 +247,17 @@ input[name="radio_slide"] {
 
 .japan {
   background: url(/travel/img/destinations/japan.jpg) no-repeat;
-  height: 800px;
-  width: 800px;
+  width: auto;
 }
 
 .usa {
   background: url(/travel/img/destinations/usa.jpg) no-repeat;
-  height: 800px;
-  width: 800px;
+  width: auto;
 }
 
 .spain {
   background: url(/travel/img/destinations/north.jpg) no-repeat;
-  height: 800px;
-  width: 800px;
+  width: auto;
 }
 
 .swiper_text {
@@ -274,24 +271,26 @@ input[name="radio_slide"] {
   color: #ffffff;
   top: 718px;
   left: 15px;
+  width: 800px;
 }
 
 .swiper__slide {
   margin: 0 30px 0 30px;
   border-radius: 16px;
   transition: all 0.6s ease;
+  height: 800px;
 }
 
-#s2:checked ~ .japan {
+#s2:checked ~ .spain {
   margin-left: 0;
 }
 
-#s1:checked ~ .japan {
+#s3:checked ~ .spain {
   margin-left: -25%;
 }
 
-#s3:checked ~ .japan {
-  margin-left: -50%;
+#s1:checked ~ .spain {
+  margin-left: 25%;
 }
 
 /* button */
