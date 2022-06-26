@@ -8,6 +8,7 @@
 html {
   scroll-behavior: smooth;
   font-size: 10px;
+  background-color: #fff;
 }
 
 body {
@@ -55,6 +56,11 @@ body {
   font-size: 1.6rem;
   line-height: 2.1rem;
   color: #ffffff;
+  transition: color 0.3s;
+}
+
+.nav_link:hover {
+  color: #0d606f;
 }
 
 a {
@@ -201,6 +207,13 @@ a {
 .button {
   background: #0d606f;
   color: #ffffff;
+  transition: transform 0.3s;
+  border: none;
+}
+
+.button:hover {
+  color: #f2785c;
+  transform: translate(0px, 4px);
 }
 
 .butten_login {
@@ -346,4 +359,14 @@ h3 {
   font-size: 16px;
   line-height: 21px;
   color: #ffffff;
+}
+
+.contact_item {
+  transition: 0.4s;
+}
+
+.contact_item:hover {
+  stroke: #f2785c;
+  fill: #f2785c;
+  transform: scale(1.2);
 }
