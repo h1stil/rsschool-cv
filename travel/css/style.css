@@ -25,7 +25,7 @@ body {
 
 .header__content {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   background: rgba(242, 120, 92, 0.7);
   box-shadow: 0px 4px 4px rgba(13, 96, 111, 0.5);
@@ -36,6 +36,7 @@ body {
   right: 0;
   top: 0;
   margin: 0 auto;
+  padding: 0 120px 0 120px;
 }
 
 .nav_menu {
@@ -45,7 +46,7 @@ body {
 
 .nav_item {
   list-style: none;
-  padding: 0 20px;
+  padding-right: 42px;
   line-height: 50px;
 }
 
@@ -124,6 +125,10 @@ a {
   align-items: center;
 }
 
+.share {
+  padding-left: 73px;
+}
+
 .layount_text {
   font-family: "Aleo";
   font-style: normal;
@@ -188,7 +193,12 @@ a {
 
 .stories_item {
   display: flex;
-  margin-top: 30px;
+  margin-top: 25px;
+}
+
+.stories_item:first-child {
+  display: flex;
+  margin-top: 40px;
 }
 
 .story_image {
@@ -215,10 +225,11 @@ a {
 
 .swiper__slader {
   display: flex;
+  margin-left: 30px;
 }
 
 .swiper__navigation {
-  margin: 24px 0 40px 0;
+  margin: 24px 0 40px 10px;
 }
 
 .radio_bar {
@@ -361,6 +372,7 @@ input[name="radio_slide"] {
   font-size: 3.2rem;
   line-height: 3.9rem;
   color: #ffffff;
+  padding-left: 6px;
 }
 h1 {
   font-family: "Aleo";
@@ -428,7 +440,6 @@ h3 {
 .footer {
   height: 61px;
   display: flex;
-  justify-content: space-around;
   align-items: center;
 }
 
@@ -450,6 +461,7 @@ h3 {
   font-size: 16px;
   line-height: 21px;
   color: #ffffff;
+  margin: 0 330px 0px 590px;
 }
 
 .contact_item {
