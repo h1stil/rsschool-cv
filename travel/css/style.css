@@ -71,7 +71,7 @@ a {
 /* main */
 
 .preview {
-  background-image: url(travel/img/bg_header.jpg);
+  background-image: url(./travel/img/bg_header.jpg);
   max-width: 1440px;
   height: 765px;
   top: 0px;
@@ -175,7 +175,7 @@ a {
 }
 
 .stories_wrapper {
-  background-image: url(travel/img/bg_footer.jpg);
+  background-image: url(./travel/img/bg_footer.jpg);
   max-width: 1440px;
   height: 1331px;
 }
@@ -257,17 +257,17 @@ input[name="radio_slide"] {
 }
 
 .japan {
-  background: url(travel/img/destinations/japan.jpg) no-repeat;
+  background: url(./travel/img/destinations/japan.jpg) no-repeat;
   width: auto;
 }
 
 .usa {
-  background: url(travel/img/destinations/usa.jpg) no-repeat;
+  background: url(./travel/img/destinations/usa.jpg) no-repeat;
   width: auto;
 }
 
 .spain {
-  background: url(travel/img/destinations/north.jpg) no-repeat;
+  background: url(./travel/img/destinations/north.jpg) no-repeat;
   width: auto;
 }
 
