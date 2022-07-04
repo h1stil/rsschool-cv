@@ -16,6 +16,11 @@ body {
   font-family: "Aleo", Verdana, serif;
 }
 
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
 .wrapper {
   max-width: 1440px;
   margin: 0 auto;
@@ -29,14 +34,10 @@ body {
   align-items: center;
   background: rgba(242, 120, 92, 0.7);
   box-shadow: 0px 4px 4px rgba(13, 96, 111, 0.5);
-  position: absolute;
   height: 90px;
-  max-width: 1440px;
-  left: 0px;
-  right: 0;
-  top: 0;
+  /* max-width: 100%; */
   margin: 0 auto;
-  padding: 0 120px 0 120px;
+  padding: 0 8.33% 0 8.33%;
 }
 
 .nav_menu {
@@ -47,7 +48,6 @@ body {
 .nav_item {
   list-style: none;
   padding-right: 42px;
-  line-height: 50px;
 }
 
 .nav_link {
@@ -71,30 +71,24 @@ a {
 /* main */
 
 .preview {
+  background-size: cover;
   background-image: url(../img/bg_header.jpg);
-  max-width: 1440px;
-  height: 765px;
-  top: 0px;
-  box-sizing: border-box;
+  padding-bottom: 1%;
 }
 
 .preview__content {
   max-width: 892px;
   max-height: 422px;
-  margin: 122px 428px 221px 120px;
-  position: absolute;
+  margin: 8.47% 0px 15.34% 120px;
 }
 
 .preview__search {
   background: rgba(255, 255, 255, 0.7);
   border-radius: 16px;
   width: 100%;
-  height: 95px;
-  position: absolute;
-  top: 294px;
+  height: 10%;
   display: flex;
   justify-content: space-between;
-  /* align-items: center; */
 }
 
 .search_text {
@@ -207,68 +201,90 @@ a {
   margin-right: 40px;
 }
 
-/* .stories_text {
-  width: 760px;
-  height: 184px;
-} */
-
 /* slider */
 
-.swiper {
+.destinations__content {
   max-width: 1440px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  margin: 0 auto;
+  position: relative;
+}
+
+.swiper {
   overflow: hidden;
 }
 
 .swiper__slader {
+  justify-content: center;
   display: flex;
-  margin-left: 30px;
+  width: 100%;
+  transition: all 0.5s;
+}
+
+.swiper__slide {
+  border-radius: 16px;
+  width: 100%;
+  flex-shrink: 0;
+  height: 800px;
+  width: 800px;
+  transition: all 0.6s ease;
+}
+
+.japan {
+  background: url(../img/destinations/japan.jpg) no-repeat;
+  margin: 0 2.08% 0 2.08%;
+}
+
+.usa {
+  background: url(../img/destinations/usa.jpg) no-repeat;
+  margin: 0 2.08% 0 2.08%;
+}
+
+.spain {
+  background: url(../img/destinations/north.jpg) no-repeat;
+  margin: 0 2.08% 0 2.08%;
 }
 
 .swiper__navigation {
   margin: 24px 0 40px 10px;
+  display: flex;
+  justify-content: center;
 }
 
-.radio_bar {
+.swiper__navigation input[type="radio"] {
+  display: none;
+}
+
+.form_radio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form_radio label {
+  display: inline-block;
   height: 20px;
   width: 20px;
   background-color: rgba(242, 120, 92, 0.5);
   cursor: pointer;
   border-radius: 50%;
-  transition: all 0.4s ease;
   margin-right: 10px;
 }
 
 .radio_bar:hover {
   background: #f2785c;
-  transform: scale(1.1);
+  transition: all 0.4s ease;
 }
 
-.swiper__navigation {
-  display: flex;
+#s1:checked ~ .form_radio label[for="s1"] {
+  background: #f2785c;
 }
 
-input[name="radio_slide"] {
-  display: none;
-  visibility: hidden;
+#s2:checked ~ .form_radio label[for="s2"] {
+  background: #f2785c;
 }
 
-.japan {
-  background: url(../img/destinations/japan.jpg) no-repeat;
-  width: auto;
-}
-
-.usa {
-  background: url(../img/destinations/usa.jpg) no-repeat;
-  width: auto;
-}
-
-.spain {
-  background: url(../img/destinations/north.jpg) no-repeat;
-  width: auto;
+#s3:checked ~ .form_radio label[for="s3"] {
+  background: #f2785c;
 }
 
 .swiper_text {
@@ -282,14 +298,6 @@ input[name="radio_slide"] {
   color: #ffffff;
   top: 718px;
   left: 15px;
-  width: 800px;
-}
-
-.swiper__slide {
-  margin: 0 30px 0 30px;
-  border-radius: 16px;
-  transition: all 0.6s ease;
-  height: 800px;
 }
 
 #s2:checked ~ .spain {
@@ -297,13 +305,12 @@ input[name="radio_slide"] {
 }
 
 #s3:checked ~ .spain {
-  margin-left: -25%;
+  margin-left: -100%;
 }
 
 #s1:checked ~ .spain {
-  margin-left: 25%;
+  margin-left: 100%;
 }
-
 /* button */
 
 .button {
@@ -390,9 +397,6 @@ h1 {
   font-size: 2rem;
   line-height: 2.4rem;
   color: #ffffff;
-  position: absolute;
-  left: 0px;
-  top: 224px;
 }
 
 h2 {
